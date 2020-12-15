@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   	<title>clave acceso</title>
+<style type="text/css">
+   #titulo {
+	background-color: #FFBB00;
+    width: 60%;
+	padding: 20px;
+	text-align:center;
+    font-family: "verdana";
+    font-size: 24px;
+    color: aliceblue;
+       margin-left: auto;
+        margin-right:auto;
+}
+#titulo1 {
+	background-color: #375E97;
+    width: 60%;
+	padding: 20px;
+	text-align:center;
+    font-family: "verdana";
+    font-size: 32px;
+    color: cornsilk;
+       margin-left: auto;
+        margin-right:auto;
+}
+</style> 
+</head>
+
+<body bgcolor="#324851">
+
+<script>
+
+function acceso(){
+   	if (document.formclave.clave.value === 'autosoc7') {
+    window.location = document.formclave.clave.value + ".html"
+} else{
+    alert("La contraseña no es correcta");
+}
+    }
+
+</script>
+<div id="titulo1">
+<b id="negrita">ColucApps - AutoEvaluación</b>
+    </div>
+    <br>
+<div id="titulo">
+    Estudiante tenga en cuenta que la Autoevaluación se habilitará en la fecha correspondiente. Para ello debe solicitar la 
+    <b id="negrita">contraseña</b> de acceso a su docente.
+    <form name=formclave>
+
+
+<input type=password name=clave>
+
+<input type=button value=Acceder onclick="acceso()">
+
+</form>
+</div>
+</body>
+
+</html>
